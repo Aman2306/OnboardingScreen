@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		A6247101221EFB3F006DF763 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6247100221EFB3F006DF763 /* AppDelegate.swift */; };
-		A6247103221EFB3F006DF763 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6247102221EFB3F006DF763 /* ViewController.swift */; };
+		A6247103221EFB3F006DF763 /* DemoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6247102221EFB3F006DF763 /* DemoScreen.swift */; };
 		A6247106221EFB3F006DF763 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6247104221EFB3F006DF763 /* Main.storyboard */; };
 		A6247108221EFB42006DF763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6247107221EFB42006DF763 /* Assets.xcassets */; };
 		A624710B221EFB42006DF763 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6247109221EFB42006DF763 /* LaunchScreen.storyboard */; };
+		A6247113221F0B25006DF763 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6247112221F0B25006DF763 /* ViewController.swift */; };
+		A6247115221F0EB4006DF763 /* OnboardingViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6247114221F0EB4006DF763 /* OnboardingViewClass.swift */; };
+		A8F28837227ADB3E96FCB445 /* Pods_DemoScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00113C943C2201B302C1FB9E /* Pods_DemoScreen.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00113C943C2201B302C1FB9E /* Pods_DemoScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25D0558D4092D1872FAC5D68 /* Pods-DemoScreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoScreen.release.xcconfig"; path = "Target Support Files/Pods-DemoScreen/Pods-DemoScreen.release.xcconfig"; sourceTree = "<group>"; };
 		A62470FD221EFB3F006DF763 /* DemoScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6247100221EFB3F006DF763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6247102221EFB3F006DF763 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6247102221EFB3F006DF763 /* DemoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoScreen.swift; sourceTree = "<group>"; };
 		A6247105221EFB3F006DF763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6247107221EFB42006DF763 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A624710A221EFB42006DF763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A624710C221EFB42006DF763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6247112221F0B25006DF763 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6247114221F0EB4006DF763 /* OnboardingViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewClass.swift; sourceTree = "<group>"; };
+		C798C06ED2EE01964D089DD2 /* Pods-DemoScreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoScreen.debug.xcconfig"; path = "Target Support Files/Pods-DemoScreen/Pods-DemoScreen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F28837227ADB3E96FCB445 /* Pods_DemoScreen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				A62470FF221EFB3F006DF763 /* DemoScreen */,
 				A62470FE221EFB3F006DF763 /* Products */,
+				F9C0411FC0705381655A510C /* Pods */,
+				ECC34319242EBD56B01DFA84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +65,33 @@
 		A62470FF221EFB3F006DF763 /* DemoScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A6247112221F0B25006DF763 /* ViewController.swift */,
+				A6247102221EFB3F006DF763 /* DemoScreen.swift */,
+				A6247114221F0EB4006DF763 /* OnboardingViewClass.swift */,
 				A6247100221EFB3F006DF763 /* AppDelegate.swift */,
-				A6247102221EFB3F006DF763 /* ViewController.swift */,
 				A6247104221EFB3F006DF763 /* Main.storyboard */,
 				A6247107221EFB42006DF763 /* Assets.xcassets */,
 				A6247109221EFB42006DF763 /* LaunchScreen.storyboard */,
 				A624710C221EFB42006DF763 /* Info.plist */,
 			);
 			path = DemoScreen;
+			sourceTree = "<group>";
+		};
+		ECC34319242EBD56B01DFA84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00113C943C2201B302C1FB9E /* Pods_DemoScreen.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9C0411FC0705381655A510C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C798C06ED2EE01964D089DD2 /* Pods-DemoScreen.debug.xcconfig */,
+				25D0558D4092D1872FAC5D68 /* Pods-DemoScreen.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A624710F221EFB42006DF763 /* Build configuration list for PBXNativeTarget "DemoScreen" */;
 			buildPhases = (
+				8923DD196D970EF939D262EE /* [CP] Check Pods Manifest.lock */,
 				A62470F9221EFB3F006DF763 /* Sources */,
 				A62470FA221EFB3F006DF763 /* Frameworks */,
 				A62470FB221EFB3F006DF763 /* Resources */,
+				CF643B1632A26B5A091E6C09 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +162,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8923DD196D970EF939D262EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoScreen-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF643B1632A26B5A091E6C09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoScreen/Pods-DemoScreen-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/paper_onboarding.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoScreen/Pods-DemoScreen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A62470F9221EFB3F006DF763 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6247103221EFB3F006DF763 /* ViewController.swift in Sources */,
+				A6247115221F0EB4006DF763 /* OnboardingViewClass.swift in Sources */,
+				A6247113221F0B25006DF763 /* ViewController.swift in Sources */,
+				A6247103221EFB3F006DF763 /* DemoScreen.swift in Sources */,
 				A6247101221EFB3F006DF763 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,8 +361,10 @@
 		};
 		A6247110221EFB42006DF763 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C798C06ED2EE01964D089DD2 /* Pods-DemoScreen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2NP3XDZU5N;
 				INFOPLIST_FILE = DemoScreen/Info.plist;
@@ -291,15 +374,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.amanmeena.DemoScreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		A6247111221EFB42006DF763 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25D0558D4092D1872FAC5D68 /* Pods-DemoScreen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2NP3XDZU5N;
 				INFOPLIST_FILE = DemoScreen/Info.plist;
@@ -309,8 +395,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.amanmeena.DemoScreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
