@@ -1,4 +1,4 @@
-//
+ //
 //  AppDelegate.swift
 //  DemoScreen
 //
@@ -12,10 +12,28 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var userData = UserDefaults.standard
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        var firstVC = storyBoard.instantiateViewController(withIdentifier: "DemoBoardApp")
+        
+        
+        if userData.bool(forKey: "demoCompleted") {
+            firstVC = storyBoard.instantiateViewController(withIdentifier: "MainBoardApp")
+        }
+        
+        window?.rootViewController = firstVC
+        window?.makeKeyAndVisible()
+        
+        // Uncomment the below code and it will alternatively show the demo screen because once the key will be set true and then false
+//        userData.set(false, forKey: "demoCompleted")
+//        userData.synchronize()
         return true
     }
 

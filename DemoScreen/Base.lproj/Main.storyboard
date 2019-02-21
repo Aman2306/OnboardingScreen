@@ -13,37 +13,70 @@
         <!--Demo Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="DemoScreen" customModule="DemoScreen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DemoBoardApp" id="BYZ-38-t0r" customClass="DemoScreen" customModule="DemoScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCd-EA-dzG" customClass="OnboardingViewClass" customModule="DemoScreen" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZCd-EA-dzG" customClass="OnboardingViewClass" customModule="DemoScreen" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="465"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nx-bm-ltW">
+                                <rect key="frame" x="21" y="635" width="58" height="32"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0gH-zd-tfF" kind="popoverPresentation" popoverAnchorView="1nx-bm-ltW" id="Fyw-j7-z8V">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWI-hb-khQ">
+                                <rect key="frame" x="295" y="633" width="96" height="34"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TU5-oa-HRS"/>
+                                    <segue destination="0gH-zd-tfF" kind="show" id="uGG-ow-UTS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ZCd-EA-dzG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9bv-YD-FTz"/>
-                            <constraint firstItem="ZCd-EA-dzG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="drx-yu-eug"/>
-                            <constraint firstAttribute="bottom" secondItem="ZCd-EA-dzG" secondAttribute="bottom" id="eZe-5w-KRX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZCd-EA-dzG" secondAttribute="trailing" id="lVM-uA-RD4"/>
+                            <constraint firstItem="ZCd-EA-dzG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JXD-k6-cnB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1nx-bm-ltW" secondAttribute="trailing" constant="296" id="LTf-Ev-Qrg"/>
+                            <constraint firstItem="ZWI-hb-khQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="613" id="Paw-SE-EhA"/>
+                            <constraint firstItem="1nx-bm-ltW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="fr2-TB-sRy"/>
+                            <constraint firstItem="ZCd-EA-dzG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fza-wt-Nia"/>
+                            <constraint firstItem="1nx-bm-ltW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="615" id="hwo-3x-wfM"/>
+                            <constraint firstItem="ZCd-EA-dzG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jrN-pt-iHT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZCd-EA-dzG" secondAttribute="bottom" id="oqU-Q2-YQu"/>
+                            <constraint firstItem="ZWI-hb-khQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="16" id="p8P-yj-GCd"/>
+                            <constraint firstItem="1nx-bm-ltW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rm1-g4-6ZC"/>
+                            <constraint firstItem="ZWI-hb-khQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yvN-UH-9pR"/>
+                            <constraint firstItem="ZWI-hb-khQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="295" id="zyZ-ha-SNY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="doneButtonOutlet" destination="ZWI-hb-khQ" id="khi-Q7-w6n"/>
                         <outlet property="onboardingObj" destination="ZCd-EA-dzG" id="ryT-E2-rg3"/>
+                        <outlet property="skipButtonOutlet" destination="1nx-bm-ltW" id="uxD-Sn-7F7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-268" y="27"/>
+            <point key="canvasLocation" x="-268" y="26.53673163418291"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cZA-oc-pKS">
             <objects>
-                <viewController id="0gH-zd-tfF" customClass="ViewController" customModule="DemoScreen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainBoardApp" id="0gH-zd-tfF" customClass="ViewController" customModule="DemoScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SGQ-cN-tiR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,7 +98,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FgG-7B-DaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1044" y="27"/>
+            <point key="canvasLocation" x="618" y="27"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Fyw-j7-z8V"/>
+    </inferredMetricsTieBreakers>
 </document>
